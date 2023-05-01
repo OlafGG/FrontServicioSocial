@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*background-image: url("/img/vukan.jpg");*/
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+
+
+
+.form-login{
+    max-width: 750px;
+    min-width: none;
+
+    width: 80%;
+    height: 700px;
+    padding-top: 150px;
+    background-color: salmon;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 7px 13px 37px #000;
+    /*background-image: url("/img/vukan.jpg");*/
+}
+
+.form-div-login{
+    width: 60%;
+    height: 360px;
+    max-width: 400px;
+    min-width: none;
+
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    margin: auto;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.Titulo{
+    text-align: center;
+
+}
+.case-titulo{
+    width: 90%;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 5%;
+    margin-top: 10px;
+}
+
+.control{
+    margin-left: 5%;
+    padding-left: 30px;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-color:  #c4cbb7;
+    background-color: rgb(196, 203, 183);
+}
+
+.control-selected{
+    background-color: rgb(145, 152, 132);
+}
+
+.buttons{
+    margin-top: 25px;
+    margin-left: 35%;
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #092b5a;
+    color: #FFFFFF;
+}
+
+.cbox1{
+    margin-top: 25px;
+    margin-left: 28%;
+    width: 66px;
+    height: 12px;
+}
+
+#check-names-disable{
+    font-size: 14px;
+    color: rgb(14 ,14, 14, 0.5);
+}
+
+img{
+    width: 80px;
+    margin-left: 37%;
+}
+
+
+ 
