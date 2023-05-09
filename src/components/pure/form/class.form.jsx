@@ -3,7 +3,7 @@ import './class.css'
 
 const ClassForm = () => {
     return (
-        <div className='principal'>
+        <div className='principal-class-add'>
             <div className='body'>
                 <div className='titulo'>
                     <label id='titulo-label'>Creando una clase</label>
@@ -20,9 +20,9 @@ const ClassForm = () => {
                     <input type='text' placeholder='Caracteristica' className='description'></input>
                     <input type='text' placeholder='Caracteristica' className='description'></input>
                     <input type='text' placeholder='Caracteristica' className='description'></input>
-                    <input type='text' placeholder='Caracteristica' className='description'></input>
+                    <input type='text' placeholder='Caracteristica' className='description final'></input>
                 <div>
-                    <button type='submit'>hola padrino</button>  
+                    <button type='submit' id='submit-button-add-class'>hola padrino</button>  
                 </div>
                     
             </div>

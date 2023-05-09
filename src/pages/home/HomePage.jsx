@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import './homepages.css';
+import ClassForm from '../../components/pure/form/class.form';
+import CardClass from '../../components/pure/card.class';
 
 
 const HomePage = () => {
@@ -9,7 +11,6 @@ const HomePage = () => {
         const boton = document.getElementById(id);
         boton.style.backgroundColor = 'rgb(204, 39, 72)'
         boton.style.color = 'white';
-
          if(historialboton){
         const botonAnterior = document.getElementById(historialboton);
         botonAnterior.style.backgroundColor='white'
@@ -43,7 +44,7 @@ const HomePage = () => {
                 </div>
                 
                 <div className='fondo'>
-                    
+                    <CardClass></CardClass>
                 </div>
                 <div id='btnAdding'>
                     <button id='btnAdd'>Añadir Clases</button>
