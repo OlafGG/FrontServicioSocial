@@ -45,6 +45,8 @@ const HomePage = () => {
                 
                 <div className='fondo'>
                     <CardClass></CardClass>
+                    <CardClass></CardClass>
+                    <CardClass></CardClass>
                 </div>
                 <div id='btnAdding'>
                     <button id='btnAdd'>Añadir Clases</button>
