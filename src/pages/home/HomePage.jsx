@@ -3,6 +3,7 @@ import {useState} from 'react';
 import './homepages.css';
 import ClassForm from '../../components/pure/form/class.form';
 import CardClass from '../../components/pure/card.class';
+import EditInfoClass from '../class/edit.info.class';
 
 
 const HomePage = () => {
@@ -44,9 +45,7 @@ const HomePage = () => {
                 </div>
                 
                 <div className='fondo'>
-                    <CardClass></CardClass>
-                    <CardClass></CardClass>
-                    <CardClass></CardClass>
+                    <EditInfoClass></EditInfoClass>
                 </div>
                 <div id='btnAdding'>
                     <button id='btnAdd'>Añadir Clases</button>

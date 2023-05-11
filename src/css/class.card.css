@@ -1,6 +1,6 @@
 .body-principal-card{
-    width: 15%;
-    height: 30%;
+    width: 19%;
+    height: 38%;
     margin-right: 50px;
     border-radius: 20px;
     border: 1px solid;
@@ -17,8 +17,8 @@
 
 .lables-descriptions-class-card{
     width: 100%;
-    height: 90%;
-    border-radius: 0 0 20px 20px;
+    height: 80%;
+    
     display: block;
     margin-right: 5px;
     margin-bottom: 3px;
@@ -27,4 +27,27 @@
 
 .description-class-card{
     display: block;
+}
+
+.divbuttons-class-cards{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 20px 20px;
+}
+
+.options-config-class-card{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    float: right;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+}
+
+#trash-icon-class{
+    margin-right: 5px;
 }
