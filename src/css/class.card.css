@@ -46,8 +46,10 @@
     align-items: center;
     border: none;
     color: black;
+    background-color: white;
 }
 
 #trash-icon-class{
     margin-right: 5px;
 }
+

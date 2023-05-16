@@ -54,6 +54,8 @@ li{
     height: 20px;
     margin-left: 5px;
     float: right;
+    border-radius: 5px;
+    border: none;
 }
 
 .button-edit-class{
@@ -61,4 +63,27 @@ li{
     height: 35px;
     background-color: rgb(204, 39, 72);
     margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#rosa{
+    background-color: rgb(204, 39, 72);
+}
+
+#morado{
+    background-color: blueviolet;
+}
+
+#azulM{
+    background-color: rgb(22, 27, 85);
+}
+
+#azulC{
+    background-color: rgb(4, 39, 255);
+}
+
+#negro{
+    background-color: rgb(50, 50, 50);
 }
