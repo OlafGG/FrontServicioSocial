@@ -46,7 +46,7 @@ const HomePage = () => {
                 
                 <div className='fondo'>
                     {/*<EditInfoClass></EditInfoClass>*/}
-                    <CardClass></CardClass>
+                    {/*<CardClass></CardClass>*/}
                 </div>
                 <div id='btnAdding'>
                     <button id='btnAdd'>Añadir Clases</button>

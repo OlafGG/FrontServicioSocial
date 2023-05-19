@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/class.add.info.edit.css'
 import AddStudent from './add.student';
+import AddEvidens from './add.evidens';
 
 const ClassAddInfoEdit = () => {
     return (
@@ -19,7 +20,7 @@ const ClassAddInfoEdit = () => {
             <div className='class-add-info-students'>
                 {/*<i id='' class="bi bi-person-fill-x icon-background-edit-info"></i>
                 <p id='p-icon'>Aun no has agregado alumnos a esta clase</p>*/}
-                <AddStudent></AddStudent>
+                <AddEvidens></AddEvidens>
             </div>
             <div className='class-add-info-buttons-edit'>
                 <button className='class-info-general-buttons' id='rasgos'>Rasgos</button>
