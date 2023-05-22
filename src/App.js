@@ -15,6 +15,8 @@ function App() {
       {/*<Login></Login>*/}
       {/*<HomePage></HomePage>*/}
       <ClassAddInfoEdit></ClassAddInfoEdit>
+      {/*<RasgosEditInfo></RasgosEditInfo>*/}
+
     </div>
   );
 }

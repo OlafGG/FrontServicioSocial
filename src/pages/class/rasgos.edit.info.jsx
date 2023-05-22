@@ -21,13 +21,13 @@ const RasgosEditInfo = () => {
                 <label id='message-model-evaluation'>Todos los periodos son evaluados encon este modelo</label>
                 <br/>
                 <ul>
-                    <li><label className='evaluation-model'>Actividades</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Tareas</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Proyectos</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Examen</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Practicas</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Asistencia</label><span className='evaluation-model'>15%</span></li>
-                    <li><label className='evaluation-model'>Trabajos</label><span className='evaluation-model'>15%</span></li>
+                    <li><label className='evaluation-model'>Actividades</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Tareas</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Proyectos</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Examen</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Practicas</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Asistencia</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
+                    <li><label className='evaluation-model'>Trabajos</label><div className='div-span-evaluation'><span className='evaluation-model'>15%</span></div></li>
                 </ul>
             </div>
             <div id='buttons-end-model-class'>
