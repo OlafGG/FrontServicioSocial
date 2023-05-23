@@ -1,0 +1,19 @@
+.div-tabla-alumnos-principal{
+    width: 60%;
+    box-sizing: border-box;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+th, table{
+    border: 2px solid;
+    border-collapse:collapse;
+}
+
+.title-table-rasgos, #name-table-rasgos{
+    color: rgba(128, 128, 128, .7);
+}
+
