@@ -24,17 +24,23 @@ const TableStudents = () => {
         nombre: 'Daniel Aros'
     }
     ]
+
+    const calif1 = [10, 20, 30]
+    const calif2 = [1, 2, 3]
     return (
         <div className='div-tabla-alumnos-principal'>
             <table>
                 <tr>
-                <th>Periodo</th>
+                <th id='periodo'>Periodo</th>
                 {
-                    parcial.map((element) => 
-                    <th colSpan={5}>{element.descripcion}</th>
+                    parcial.map((element, index) => index === 0 ? 
+                    <th id='descripcion1' colSpan={5}>{element.descripcion}</th> : 
+                    
+                        index === 1 ? <th id='descripcion2' colSpan={5}>{element.descripcion}</th> : <th id='descripcion3' colSpan={5}>{element.descripcion}</th>
+                    
                     )
                 }
-                <th>FN</th>
+                <th id='FN'>FN</th>
                 </tr>
                 <tr>
                     <th>
@@ -70,13 +76,17 @@ const TableStudents = () => {
                             {element.nombre}
                         </th>
                         {
-                            parcial.map(element => 
+                            parcial.map((element, index) => 
                         <>
                         <td className='title-table-rasgos'>
-                            --
+                            {
+                                calif1[index]
+                            }
                         </td>
                         <td className='title-table-rasgos'>
-                            --
+                            {
+                                calif2[index]
+                            }
                         </td>
                         <td className='title-table-rasgos'>
                             --                            
