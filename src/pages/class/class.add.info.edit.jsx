@@ -11,7 +11,7 @@ const ClassAddInfoEdit = () => {
         <div className='class-add-information-edit'>
             <div className='class-add-info-title'>
                 <button className='class-edit-info-button-title '><i style={{fontSize: '140%'}} class="bi bi-house-door-fill"></i></button>
-                <label id='class-edit-info-title'>DIA DE LA MARMOTA</label>
+                <label id='class-edit-info-title'>Introduccion a la Progrmacion</label>
                 <button className='class-edit-info-button-title'><i style={{fontSize: '140%'}} class="bi bi-box-arrow-right"></i></button>
             </div>
             <div className='class-add-info-buttons-up'>

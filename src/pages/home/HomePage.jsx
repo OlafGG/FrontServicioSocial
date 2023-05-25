@@ -4,6 +4,7 @@ import './homepages.css';
 import ClassForm from '../../components/pure/form/class.form';
 import CardClass from '../../components/pure/card.class';
 import EditInfoClass from '../class/edit.info.class';
+import TablasInfoCalendary from '../class/tablas.info.calendary';
 
 
 const HomePage = () => {
@@ -47,6 +48,7 @@ const HomePage = () => {
                 <div className='fondo'>
                     {/*<EditInfoClass></EditInfoClass>*/}
                     {/*<CardClass></CardClass>*/}
+                    <TablasInfoCalendary></TablasInfoCalendary>
                 </div>
                 <div id='btnAdding'>
                     <button id='btnAdd'>Añadir Clases</button>
