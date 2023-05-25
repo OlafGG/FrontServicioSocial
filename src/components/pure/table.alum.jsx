@@ -151,7 +151,7 @@ const TableAlum = () => {
                     <th>{element.nombre}</th>
                     {
                        fechas.map((element, index) => 
-                       <th> -- </th>) 
+                       <th className='dummy'> -- </th>) 
                     }
                     <th> -- </th>
                 </tr> : '')

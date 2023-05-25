@@ -13,7 +13,9 @@ th, table{
     border-collapse:collapse;
 }
 
-.title-table-rasgos, #name-table-rasgos{
-    color: rgba(128, 128, 128, .7);
+.title-table-rasgos{
+    color: rgba(128, 128, 128, .8);
 }
+
+
 

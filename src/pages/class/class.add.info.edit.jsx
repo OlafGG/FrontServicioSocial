@@ -4,6 +4,7 @@ import AddStudent from './add.student';
 import AddEvidens from './add.evidens';
 import TableAlum from '../../components/pure/table.alum';
 import TableStudents from '../../components/pure/table.students';
+import PorAlumnosClass from './porAlumnos.class';
 
 const ClassAddInfoEdit = () => {
     return (
@@ -23,8 +24,9 @@ const ClassAddInfoEdit = () => {
                 {/*<i id='' class="bi bi-person-fill-x icon-background-edit-info"></i>
                 <p id='p-icon'>Aun no has agregado alumnos a esta clase</p>*/}
                 {/*<AddEvidens></AddEvidens>*/}
-                <TableAlum></TableAlum>
+                {/*<TableAlum></TableAlum>*/}
                 {/*<TableStudents></TableStudents>*/}
+                <PorAlumnosClass></PorAlumnosClass>
             </div>
             <div className='class-add-info-buttons-edit'>
                 <button className='class-info-general-buttons' id='rasgos'>Rasgos</button>

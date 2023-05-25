@@ -1,0 +1,18 @@
+#porAlumnos-div-class-principal{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button-alum-separate{
+    width: 120px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    
+    background-color: white;
+    color: rgb(204, 39, 72);
+}

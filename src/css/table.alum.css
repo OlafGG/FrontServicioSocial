@@ -21,3 +21,10 @@ th{
     height: 20px;
     margin-right: 5px;
 }
+
+.dummy{
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}

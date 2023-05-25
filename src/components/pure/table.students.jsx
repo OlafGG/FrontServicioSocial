@@ -78,12 +78,12 @@ const TableStudents = () => {
                         {
                             parcial.map((element, index) => 
                         <>
-                        <td className='title-table-rasgos'>
+                        <td className='title-table-rasgos renderized'>
                             {
                                 calif1[index]
                             }
                         </td>
-                        <td className='title-table-rasgos'>
+                        <td className='title-table-rasgos renderized'>
                             {
                                 calif2[index]
                             }
