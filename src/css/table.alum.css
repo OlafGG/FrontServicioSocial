@@ -1,8 +1,4 @@
-#table-students, th{
-    border: 1px solid rgba(128, 128, 128, .2);
-    border-collapse: collapse;
-    
-}
+
 
 th{
     width: auto;
@@ -10,4 +6,18 @@ th{
 }
 .rotate{
     transform: rotate(-90.0deg);
+}
+
+.fecha-text{
+    font-size: 10px;
+}
+#table-students, th{
+    border: 1px solid rgba(128, 128, 128, .2);
+    border-collapse: collapse;    
+}
+
+.button-change-students{
+    width: 40px;
+    height: 20px;
+    margin-right: 5px;
 }

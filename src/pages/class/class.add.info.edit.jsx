@@ -23,8 +23,8 @@ const ClassAddInfoEdit = () => {
                 {/*<i id='' class="bi bi-person-fill-x icon-background-edit-info"></i>
                 <p id='p-icon'>Aun no has agregado alumnos a esta clase</p>*/}
                 {/*<AddEvidens></AddEvidens>*/}
-                {/*<TableAlum></TableAlum>*/}
-                <TableStudents></TableStudents>
+                <TableAlum></TableAlum>
+                {/*<TableStudents></TableStudents>*/}
             </div>
             <div className='class-add-info-buttons-edit'>
                 <button className='class-info-general-buttons' id='rasgos'>Rasgos</button>

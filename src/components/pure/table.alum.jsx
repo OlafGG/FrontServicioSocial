@@ -99,22 +99,36 @@ const TableAlum = () => {
         nombre: 'Juan Smith'
     }]
 
+    const fechas = [{
+        fecha: '12-Enero'
+    },
+    {
+        fecha: '14-Enero'
+    },
+    {
+        fecha: '19-Enero'
+    },
+    {
+        fecha: '21-Enero'
+    }
+    ]
+
     const [inicio, setInicio] = useState(0);
     const [fin, setFin] = useState(8);
-
+    const  [array, setArray] = useState(fechas.length);
     return (
         <div className='div-table-alum-principal'>
-        <button onClick={() => {
+        <button className='button-change-students' onClick={() => {
             setInicio(0);
             setFin(8);
             }
             }>1</button>
-        <button onClick={() => {
+        <button className='button-change-students' onClick={() => {
             setInicio(8);
             setFin(16);
             }
             }>2</button>
-        <button onClick={() => {
+        <button className='button-change-students' onClick={() => {
             setInicio(16);
             setFin(24);
             }
@@ -122,13 +136,23 @@ const TableAlum = () => {
             <table id='table-students'>
                 <tr>
                     <th>Alumnos</th>
-                    <th className='rotate'>Fecha</th>
+                    
+                    {
+                       fechas.map((element, index) => array > 0 ? 
+                       <th className='rotate fecha-text'> {element.fecha} </th>
+                       : 
+                       ''
+                       ) 
+                    }
                     <th className='rotate'>%Asis</th>
                 </tr>
                 {
                     DumYVATA1.map((element, index) => index >= inicio && index < fin  ?  <tr>
                     <th>{element.nombre}</th>
-                    <th> -- </th>
+                    {
+                       fechas.map((element, index) => 
+                       <th> -- </th>) 
+                    }
                     <th> -- </th>
                 </tr> : '')
                 }
