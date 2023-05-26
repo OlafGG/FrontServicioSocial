@@ -1,0 +1,12 @@
+.fondo-numero-2{
+    width: 100%;
+    height: 82%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.principal2{
+    width: 100%;
+    height: 100%;
+}

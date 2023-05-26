@@ -5,6 +5,9 @@ import ClassForm from '../../components/pure/form/class.form';
 import CardClass from '../../components/pure/card.class';
 import EditInfoClass from '../class/edit.info.class';
 import TablasInfoCalendary from '../class/tablas.info.calendary';
+import Calendar from '../../components/pure/calendary';
+import CalendarioClass from '../class/calendario.class';
+import CardClassShow from '../class/card.class.show';
 
 
 const HomePage = () => {
@@ -38,20 +41,13 @@ const HomePage = () => {
                 </nav>
             </div>
             <div className='principal'>
-                <div className='mis-clases-label titulo'>
-                    <label>Mis clases</label>
-                </div>
-                <div className='mis-clases-label nombre-maestro'>
-                    <label>{/*user.name*/}Juan</label>
-                </div>
                 
                 <div className='fondo'>
                     {/*<EditInfoClass></EditInfoClass>*/}
                     {/*<CardClass></CardClass>*/}
-                    <TablasInfoCalendary></TablasInfoCalendary>
-                </div>
-                <div id='btnAdding'>
-                    <button id='btnAdd'>Añadir Clases</button>
+                    {/*<TablasInfoCalendary></TablasInfoCalendary>*/}
+                    <CalendarioClass></CalendarioClass>
+                    {/*<CardClassShow></CardClassShow>*/}
                 </div>
                 
             </div>
