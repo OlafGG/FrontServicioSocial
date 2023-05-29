@@ -10,7 +10,7 @@ const TableRevisionsShow = () => {
                 <label>Pendientes</label>
             </div>
             <div id='div-profe-button-show'>
-                <p id='title-name'>Dieguito </p>
+                <p id='title-name'>Docente: Dieguito </p>
                 <button id='button-show-materies'>Mostrar todas las materias</button>
             </div>
             <div id='div-table-revision'>

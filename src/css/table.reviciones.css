@@ -1,0 +1,33 @@
+#table-div-principal{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#table-revisions-principal{
+    border-collapse: collapse;
+    border-radius: 15px;
+    border: none;
+}
+
+#title-table-revision, .title-table-th{
+    background-color: rgb(204, 39, 72);
+    color: white;
+    border: none;
+}
+
+.data-td-show{
+    border-top: 1px solid rgb(204, 39, 72);
+    border-bottom: 1px solid rgb(204, 39, 72);
+    color: black;
+}
+
+.border-left-table{
+    border-left: 1px solid rgb(204, 39, 72);
+}
+
+.border-right-table{
+    border-right:1px solid rgb(204, 39, 72);
+}
+
+
+
