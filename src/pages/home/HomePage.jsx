@@ -8,6 +8,7 @@ import TablasInfoCalendary from '../class/tablas.info.calendary';
 import Calendar from '../../components/pure/calendary';
 import CalendarioClass from '../class/calendario.class';
 import CardClassShow from '../class/card.class.show';
+import TableRevisionsShow from '../class/table.revisions.show';
 
 
 const HomePage = () => {
@@ -46,8 +47,9 @@ const HomePage = () => {
                     {/*<EditInfoClass></EditInfoClass>*/}
                     {/*<CardClass></CardClass>*/}
                     {/*<TablasInfoCalendary></TablasInfoCalendary>*/}
-                    <CalendarioClass></CalendarioClass>
+                    {/*<CalendarioClass></CalendarioClass>*/}
                     {/*<CardClassShow></CardClassShow>*/}
+                    <TableRevisionsShow></TableRevisionsShow>
                 </div>
                 
             </div>
