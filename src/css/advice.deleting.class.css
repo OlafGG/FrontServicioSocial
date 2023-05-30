@@ -1,0 +1,75 @@
+#portatodo-class-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#title-advice-deleting-principal{
+    width: 100%;
+    height: 10%;
+    
+}
+
+#advice-class-deleting-principal{
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+#secure-advice-deleting{
+    width: 100%;
+    height: 13%;
+    margin-top: 10px;
+}
+
+#div-data-advice{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#list-carac-display{
+    width: 60%;
+    font-size: small;
+}
+
+
+#deleting-class-advice-title-label{
+    font-size: 25px;
+    color: rgb(204, 39, 72);
+}
+
+#input-class-advice-deleting{
+    background-color: rgba(128, 128, 128, .6);
+    border-radius: 5px;
+}
+
+#class-name-advice-label{
+    font-weight: bold;
+}
+
+#div-data-buttons{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button-advice-deleting-class{
+    width: 30%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+#borrar-class-advice-button {
+    background-color: rgb(204, 39, 72);
+    color: white;
+}

@@ -9,6 +9,7 @@ import Calendar from '../../components/pure/calendary';
 import CalendarioClass from '../class/calendario.class';
 import CardClassShow from '../class/card.class.show';
 import TableRevisionsShow from '../class/table.revisions.show';
+import AdviceDeletingClass from '../class/advice.deleting.class';
 
 
 const HomePage = () => {
@@ -49,7 +50,8 @@ const HomePage = () => {
                     {/*<TablasInfoCalendary></TablasInfoCalendary>*/}
                     {/*<CalendarioClass></CalendarioClass>*/}
                     {/*<CardClassShow></CardClassShow>*/}
-                    <TableRevisionsShow></TableRevisionsShow>
+                    {/*<TableRevisionsShow></TableRevisionsShow>*/}
+                    <AdviceDeletingClass></AdviceDeletingClass>
                 </div>
                 
             </div>
