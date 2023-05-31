@@ -10,6 +10,9 @@ import CalendarioClass from '../class/calendario.class';
 import CardClassShow from '../class/card.class.show';
 import TableRevisionsShow from '../class/table.revisions.show';
 import AdviceDeletingClass from '../class/advice.deleting.class';
+import EditStudentsClass from '../class/edit.students.class';
+import DeletingStudentsAdvice from '../class/deleting.students.advice';
+import ConfigAppColor from '../class/config.app.color';
 
 
 const HomePage = () => {
@@ -51,7 +54,10 @@ const HomePage = () => {
                     {/*<CalendarioClass></CalendarioClass>*/}
                     {/*<CardClassShow></CardClassShow>*/}
                     {/*<TableRevisionsShow></TableRevisionsShow>*/}
-                    <AdviceDeletingClass></AdviceDeletingClass>
+                    {/*<AdviceDeletingClass></AdviceDeletingClass>*/}
+                    {/*<EditStudentsClass></EditStudentsClass>*/}
+                    {/*<DeletingStudentsAdvice></DeletingStudentsAdvice>*/}
+                    <ConfigAppColor></ConfigAppColor>
                 </div>
                 
             </div>
