@@ -69,7 +69,8 @@ const TablaRevisiones = () => {
                     actividades.map((element) => 
                     <tr>
                         <td className='data-td-show border-left-table'>{element.trabajo}</td>
-                        <td className='data-td-show'>{element.materia}</td>                            <td className='data-td-show'>{element.dato1}</td>
+                        <td className='data-td-show'>{element.materia}</td>                            
+                        <td className='data-td-show'>{element.dato1}</td>
                         <td className='data-td-show'>{element.dato2}</td>
                         <td className='data-td-show border-right-table'>{element.numero_revicion}</td>
                     </tr>

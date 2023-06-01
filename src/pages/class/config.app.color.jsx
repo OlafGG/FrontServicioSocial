@@ -35,11 +35,11 @@ const ConfigAppColor = () => {
                     <p id='chosing-theme'>Elige el tema principal:</p>
                 </div>
                 <div id='colors-chosing-adjust'>
-                    <button className='button-chosing-theme' onClick={() => {cambiarColorM('btn-pink')}}><i className='bi bi-check-lg  whiteone' id='btn-pink'></i></button>
-                    <button className='button-chosing-theme' onClick={() => {cambiarColorM('btn-purple')}}><i id='btn-purple'></i></button>
-                    <button className='button-chosing-theme' onClick={() => {cambiarColorM('btn-king-blue')}}><i id='btn-king-blue'></i></button>
-                    <button className='button-chosing-theme' onClick={() => {cambiarColorM('btn-blue')}} ><i id='blue'></i></button>
-                    <button className='button-chosing-theme' onClick={() => {cambiarColorM('btn-black')}}><i id='black'></i></button>
+                    <button id='pink' className='button-chosing-theme' onClick={() => {cambiarColorM('btn-pink')}}><i className='bi bi-check-lg  whiteone' id='btn-pink'></i></button>
+                    <button id='purple' className='button-chosing-theme' onClick={() => {cambiarColorM('btn-purple')}}><i id='btn-purple'></i></button>
+                    <button id='king-blue' className='button-chosing-theme' onClick={() => {cambiarColorM('btn-king-blue')}}><i id='btn-king-blue'></i></button>
+                    <button id='blue' className='button-chosing-theme' onClick={() => {cambiarColorM('btn-blue')}} ><i id='btn-blue'></i></button>
+                    <button id='black' className='button-chosing-theme' onClick={() => {cambiarColorM('btn-black')}}><i id='btn-black'></i></button>
                 </div>
 
             </div>

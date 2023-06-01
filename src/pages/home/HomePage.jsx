@@ -13,6 +13,7 @@ import AdviceDeletingClass from '../class/advice.deleting.class';
 import EditStudentsClass from '../class/edit.students.class';
 import DeletingStudentsAdvice from '../class/deleting.students.advice';
 import ConfigAppColor from '../class/config.app.color';
+import AddClassCalendary from '../class/add.class.calendary';
 
 
 const HomePage = () => {
@@ -57,7 +58,8 @@ const HomePage = () => {
                     {/*<AdviceDeletingClass></AdviceDeletingClass>*/}
                     {/*<EditStudentsClass></EditStudentsClass>*/}
                     {/*<DeletingStudentsAdvice></DeletingStudentsAdvice>*/}
-                    <ConfigAppColor></ConfigAppColor>
+                    {/*<ConfigAppColor></ConfigAppColor>*/}
+                    <AddClassCalendary></AddClassCalendary>
                 </div>
                 
             </div>
