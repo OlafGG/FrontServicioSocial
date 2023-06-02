@@ -49,17 +49,7 @@ const HomePage = () => {
             <div className='principal'>
                 
                 <div className='fondo'>
-                    {/*<EditInfoClass></EditInfoClass>*/}
-                    {/*<CardClass></CardClass>*/}
-                    {/*<TablasInfoCalendary></TablasInfoCalendary>*/}
-                    {/*<CalendarioClass></CalendarioClass>*/}
-                    {/*<CardClassShow></CardClassShow>*/}
-                    {/*<TableRevisionsShow></TableRevisionsShow>*/}
-                    {/*<AdviceDeletingClass></AdviceDeletingClass>*/}
-                    {/*<EditStudentsClass></EditStudentsClass>*/}
-                    {/*<DeletingStudentsAdvice></DeletingStudentsAdvice>*/}
-                    {/*<ConfigAppColor></ConfigAppColor>*/}
-                    <AddClassCalendary></AddClassCalendary>
+                    
                 </div>
                 
             </div>
