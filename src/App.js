@@ -13,6 +13,10 @@ import AddEvidens from './pages/class/add.evidens';
 import AddClassCalendary from './pages/class/add.class.calendary';
 import ConfigAppColor from './pages/class/config.app.color';
 import TableRevisionsShow from './pages/class/table.revisions.show';
+import NavbarMenu from './components/pure/navbar.menu';
+import CalendarioClass from './pages/class/calendario.class';
+import EditInfoClass from './pages/class/edit.info.class';
+import ClassForm from './components/pure/form/class.form';
 
 
 
@@ -24,13 +28,16 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path='login' element={<Login></Login>}/>
-        <Route path='/' index element={<HomePage></HomePage>}></Route>
-        <Route element={<CardClassShow></CardClassShow>}></Route>
+        <Route  element={<NavbarMenu></NavbarMenu>}>
+        <Route index element={<CardClassShow></CardClassShow>}></Route>
+        <Route path='/login' element={<Login></Login>}/>
+        {/*<Route path='/home' index element={<HomePage/>}></Route>*/}
+        <Route path='/addClass' element={<ClassForm></ClassForm>}></Route>
         <Route element={<AddEvidens></AddEvidens>}></Route>
-        <Route element={<AddClassCalendary></AddClassCalendary>}></Route>
-        <Route element={<ConfigAppColor></ConfigAppColor>}></Route>
-        <Route element={<TableRevisionsShow></TableRevisionsShow>}></Route>
+        <Route path='/calendario' element={<CalendarioClass></CalendarioClass>}></Route>
+        <Route path='/color' element={<ConfigAppColor></ConfigAppColor>}></Route>
+        <Route path='/reviciones' element={<TableRevisionsShow></TableRevisionsShow>}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   /*<div className="App"></div>*/

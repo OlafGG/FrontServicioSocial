@@ -1,6 +1,6 @@
 #Calendary-class-div-principal{
-    width: 100%;
-    height: 100%;
+    width: calc(100%-80);
+    height: 100vh;
     text-align: center;
     box-sizing: border-box;
     text-align: center;
@@ -10,7 +10,7 @@
 
 #title-div-calendary{
     width: 100%;
-    height: 10%;
+    height: 8%;
     align-items: center;
     text-align: center;
 }
@@ -42,10 +42,11 @@
 }
 
 #div-central-calendary{
-    width: 100%;
-    height: 90%;
+    width: 95%;
+    height: 83%;
     padding-left: 10px;
     padding-right: 10px;
+    overflow-y: scroll;
 }
 
 #buttons-end-model-class{
