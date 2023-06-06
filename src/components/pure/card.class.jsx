@@ -7,10 +7,7 @@ const CardClass = ({card}) => {
 const camino = useNavigate();
 
 const navigateProps = (path) => {
-    console.log('Patron')
-        {/*camino({
-            pathname: path,
-        });*/}
+        {camino(path);}
     }
 
     return (

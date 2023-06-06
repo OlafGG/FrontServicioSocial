@@ -17,6 +17,9 @@ import NavbarMenu from './components/pure/navbar.menu';
 import CalendarioClass from './pages/class/calendario.class';
 import EditInfoClass from './pages/class/edit.info.class';
 import ClassForm from './components/pure/form/class.form';
+import ClassAddInfoEdit from './pages/class/class.add.info.edit';
+import RasgosEditInfo from './pages/class/rasgos.edit.info';
+import TableStudents from './components/pure/table.students';
 
 
 
@@ -37,6 +40,10 @@ function App() {
         <Route path='/calendario' element={<CalendarioClass></CalendarioClass>}></Route>
         <Route path='/color' element={<ConfigAppColor></ConfigAppColor>}></Route>
         <Route path='/reviciones' element={<TableRevisionsShow></TableRevisionsShow>}></Route>
+        </Route>
+        <Route path='/classEditInfo' element={<ClassAddInfoEdit></ClassAddInfoEdit>}>
+          <Route path='/classEditInfo/tableAlumns' element={<TableStudents></TableStudents>}></Route>
+          <Route path='/classEditInfo/evidencias' element={<AddEvidens></AddEvidens>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

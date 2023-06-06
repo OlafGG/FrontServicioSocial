@@ -114,23 +114,23 @@ const TableAlum = () => {
     ]
 
     const [inicio, setInicio] = useState(0);
-    const [fin, setFin] = useState(8);
+    const [fin, setFin] = useState(6);
     const  [array, setArray] = useState(fechas.length);
     return (
         <div className='div-table-alum-principal'>
         <button className='button-change-students' onClick={() => {
             setInicio(0);
-            setFin(8);
+            setFin(6);
             }
             }>1</button>
         <button className='button-change-students' onClick={() => {
-            setInicio(8);
-            setFin(16);
+            setInicio(6);
+            setFin(12);
             }
             }>2</button>
         <button className='button-change-students' onClick={() => {
-            setInicio(16);
-            setFin(24);
+            setInicio(12);
+            setFin(18);
             }
             }>3</button>
             <table id='table-students'>
