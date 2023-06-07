@@ -1,8 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Calendar from '../../components/pure/calendary';
 import '../../css/calendary.class.css'
 
 const CalendarioClass = () => {
+
+    const navigate  = useNavigate();
+
     return (
         <div id='Calendary-class-div-principal'>
             <div id='title-div-calendary'>
@@ -14,7 +18,7 @@ const CalendarioClass = () => {
             <div id='div-central-calendary'>
                 <Calendar></Calendar>
             </div>
-            <div id='buttons-end-model-class'>
+            <div id='buttons-end-model-class' onClick={() => navigate('/addcalendary')}>
                 <button id='adding-element-class'>Añadir elemento</button>
             </div>
             

@@ -22,7 +22,7 @@ const ClassForm = () => {
                     <input type='text' placeholder='Caracteristica' className='description'></input>
                     <input type='text' placeholder='Caracteristica' className='description final'></input>
                 <div>
-                    <button type='submit' id='submit-button-add-class'>hola padrino</button>  
+                    <button type='submit' id='submit-button-add-class'>Añadir</button>  
                 </div>
                     
             </div>

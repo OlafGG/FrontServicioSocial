@@ -136,7 +136,7 @@ const TableAlum = () => {
             <table id='table-students'>
                 <tr>
                     <th>Alumnos</th>
-                    
+                        
                     {
                        fechas.map((element, index) => array > 0 ? 
                        <th className='rotate fecha-text'> {element.fecha} </th>

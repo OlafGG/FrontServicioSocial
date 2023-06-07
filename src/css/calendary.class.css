@@ -1,5 +1,5 @@
 #Calendary-class-div-principal{
-    width: calc(100%-80);
+    width: calc(100%-80px);
     height: 100vh;
     text-align: center;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 #title-div-calendary{
-    width: 100%;
+    width: 95%;
     height: 8%;
     align-items: center;
     text-align: center;
@@ -21,7 +21,7 @@
 }
 
 #title-teacher-class-edit{
-    width: 100%;
+    width: 95%;
     height: 7%;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@
 }
 
 #buttons-end-model-class{
-    width: 100%;
+    width: 95%;
     height: 10%;
 }
 

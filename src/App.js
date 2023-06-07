@@ -38,6 +38,7 @@ function App() {
         <Route path='/addClass' element={<ClassForm></ClassForm>}></Route>
         <Route element={<AddEvidens></AddEvidens>}></Route>
         <Route path='/calendario' element={<CalendarioClass></CalendarioClass>}></Route>
+        <Route path='/addcalendary' element={<AddClassCalendary></AddClassCalendary>}></Route>
         <Route path='/color' element={<ConfigAppColor></ConfigAppColor>}></Route>
         <Route path='/reviciones' element={<TableRevisionsShow></TableRevisionsShow>}></Route>
         </Route>
@@ -45,6 +46,7 @@ function App() {
           <Route path='/classEditInfo/tableAlumns' element={<TableStudents></TableStudents>}></Route>
           <Route path='/classEditInfo/evidencias' element={<AddEvidens></AddEvidens>}></Route>
         </Route>
+        <Route path='/rasgos' element={<RasgosEditInfo></RasgosEditInfo>}></Route>
       </Routes>
     </BrowserRouter>
   /*<div className="App"></div>*/

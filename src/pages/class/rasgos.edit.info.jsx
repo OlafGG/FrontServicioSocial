@@ -1,11 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../css/rasgos.edit.info.css'
 
 const RasgosEditInfo = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div id='rasgos-div-info-edit-principal'>
             <div id='title-div-info-edit'>
-                <button className='button-title-up'><i style={{fontSize: '140%'}} class="bi bi-house-door-fill"></i></button>
+                <button className='button-title-up' onClick={() => navigate('/classEditInfo')}><i style={{fontSize: '140%'}} class="bi bi-house-door-fill"></i></button>
                 <label id='title-class-edit'>Introduccion a la programacion</label>
                 <button className='button-title-up'><i style={{fontSize: '140%'}} class="bi bi-box-arrow-right"></i></button>
             </div>

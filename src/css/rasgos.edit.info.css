@@ -9,7 +9,7 @@
 }
 
 #title-div-info-edit{
-    width: 100%;
+    width: 90%;
     height: 10%;
     display: flex;
     justify-content: space-between;
@@ -77,7 +77,7 @@ li{
 }
 
 #buttons-end-model-class{
-    width: 100%;
+    width: 90%;
     height: 10%;
     display: flex;
     justify-content: space-around;
@@ -103,7 +103,7 @@ hr{
 
 .model-edit-button-class{
     width: 25%;
-    height: 60%;
+    height: 50%;
     border-radius: 15px;
     border: none;
     background-color: rgb(204, 39, 72);
