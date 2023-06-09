@@ -8,6 +8,7 @@ import TableAlum from '../../components/pure/table.alum';
 import TableStudents from '../../components/pure/table.students';
 import PorAlumnosClass from './porAlumnos.class';
 import RasgosEditInfo from './rasgos.edit.info';
+import EditStudentsClass from './edit.students.class';
 
 const ClassAddInfoEdit = () => {
 
@@ -45,12 +46,14 @@ const ClassAddInfoEdit = () => {
                 {history[2] && <AddEvidens/>}
                 {history[3] && <PorAlumnosClass/>}
                 {history[4] && <AddStudent/>}
+                {history[5] && <EditStudentsClass/>}
                 
             </div>
             <div className='class-add-info-buttons-edit'>
                 <button className='class-info-general-buttons' id='rasgos' onClick={() => navegar('/rasgos')}>Rasgos</button>
                 <button className='class-info-general-buttons' id='add-student' onClick={() => handleClick(4)}>Añadir alumno</button>
                 <button className='class-info-general-buttons' id='periodos'>Periodos</button>
+                <button className='class-info-general-buttons' id='editStudents' onClick={() => handleClick(5)}>Editar Alumnos</button>
             </div>
         </div>
     );

@@ -66,6 +66,10 @@
     background-color: rgb(204, 39, 72);
 }
 
+#editStudents{
+    background-color: blueviolet;
+}
+
 .class-add-info-students{
     width: 90%;
     height: 70%;

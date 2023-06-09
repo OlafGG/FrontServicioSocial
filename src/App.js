@@ -20,6 +20,7 @@ import ClassForm from './components/pure/form/class.form';
 import ClassAddInfoEdit from './pages/class/class.add.info.edit';
 import RasgosEditInfo from './pages/class/rasgos.edit.info';
 import TableStudents from './components/pure/table.students';
+import DeletingStudentsAdvice from './pages/class/deleting.students.advice';
 
 
 
@@ -45,6 +46,7 @@ function App() {
         <Route path='/classEditInfo' element={<ClassAddInfoEdit></ClassAddInfoEdit>}>
           <Route path='/classEditInfo/tableAlumns' element={<TableStudents></TableStudents>}></Route>
           <Route path='/classEditInfo/evidencias' element={<AddEvidens></AddEvidens>}></Route>
+          <Route path='/classEditInfo/deleting' element={<DeletingStudentsAdvice></DeletingStudentsAdvice>}></Route>
         </Route>
         <Route path='/rasgos' element={<RasgosEditInfo></RasgosEditInfo>}></Route>
       </Routes>

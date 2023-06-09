@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../css/deleting.students.advice.css'
 
-const DeletingStudentsAdvice = (/*alumno*/) => {
+const DeletingStudentsAdvice = ({alumno}) => {
 
-    const alumno = {
+    /*const alumno = {
         id: 123,
         name: 'Jose Maria'
-    }
+    }*/
 
     return (
         <div id='fondo-deleting-students-advice'>

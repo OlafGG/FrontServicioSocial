@@ -43,6 +43,7 @@
     border-radius: 5px;
 }
 
+
 #save-button-edit-class{
     background-color: rgb(204, 39, 72);
     color: white;
@@ -54,7 +55,7 @@
 }
 
 .li-edit, .lidos-edit{
-    width: 50%;
+    width: 100%;
     display: flex;
 }
 
