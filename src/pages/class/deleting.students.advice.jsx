@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/deleting.students.advice.css'
 
-const DeletingStudentsAdvice = ({alumno}) => {
+const DeletingStudentsAdvice = ({alumno, handleclick}) => {
 
     /*const alumno = {
         id: 123,
@@ -21,8 +21,8 @@ const DeletingStudentsAdvice = ({alumno}) => {
                     <label id='label-nip-put'>Ingrese su nip para confirmar</label><input id='input-nip-put' type='password' placeholder='NIP'></input>
                 </div>
                 <div id='buttons-deleting-students-advice-final'>
-                    <button className='buttons-deleting-advice-final' id='cancelar-button-students-advice'>Cancelar</button>
-                    <button className='buttons-deleting-advice-final' id='deleting-button-students-advice'>Eliminar</button>
+                    <button className='buttons-deleting-advice-final' id='cancelar-button-students-advice' onClick={() => handleclick(5, '')}>Cancelar</button>
+                    <button className='buttons-deleting-advice-final' id='deleting-button-students-advice' onClick={() => handleclick(1, '')}>Eliminar</button>
                 </div>
             </div>
         </div>

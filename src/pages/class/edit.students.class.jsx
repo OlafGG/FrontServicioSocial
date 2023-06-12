@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../../css/edit.students.class.css'
 import DeletingStudentsAdvice from './deleting.students.advice';
 
-const EditStudentsClass = (/*{alumnos}*/) => {
+const EditStudentsClass = (/*{alumnos}*/{handleClick}) => {
 
-    const navigate = useNavigate();
     const alumnos = [{
         name: 'Jose Juan'
     },
@@ -67,7 +66,7 @@ const EditStudentsClass = (/*{alumnos}*/) => {
                 {
                     alumnos.map((element) => 
                     <>
-                    <li><input type='checkbox'></input><div className='li-edit' id='div-check-front'><label>{element.name}</label></div><div className='lidos-edit'><i style={{fontSize: '140%'}} class="bi bi-pencil-square i-edit"></i><i style={{fontSize: '140%'}} class="bi bi-trash3-fill i-edit" onClick={() => navigate('/classEditInfo/deleting')}></i></div></li>
+                    <li><input type='checkbox'></input><div className='li-edit' id='div-check-front'><label>{element.name}</label></div><div className='lidos-edit'><i style={{fontSize: '140%'}} class="bi bi-pencil-square i-edit"></i><i style={{fontSize: '140%'}} class="bi bi-trash3-fill i-edit" onClick={() => handleClick(6, element)}></i></div></li>
                     </>
                     )
                 }
