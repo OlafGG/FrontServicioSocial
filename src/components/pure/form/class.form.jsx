@@ -51,6 +51,7 @@ const ClassForm = () => {
                 <div>
                     <button type='submit' id='submit-button-add-class' onClick={() => {
                         /*navegar('/')*/
+                        
                     }}>Añadir</button>  
                 </div>
                     
