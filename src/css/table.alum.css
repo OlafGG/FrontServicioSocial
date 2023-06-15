@@ -14,7 +14,6 @@ th{
 #table-students, th{
     border: 1px solid rgba(128, 128, 128, .2);
     border-collapse: collapse;
-    overflow: scroll; 
 }
 
 .button-change-students{
