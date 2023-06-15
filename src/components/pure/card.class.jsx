@@ -12,16 +12,19 @@ const navigateProps = (path) => {
 
     return (
         <div className='body-principal-card'>
+        {
+            console.log(card)
+        }
             <div className='div-title-card-class' onClick={() => navigateProps('/classEditInfo')} >
-                <label id='title-name-card-class'>Nombre de la clase</label>
+                <label id='title-name-card-class'>{card.materia_name}</label>
             </div>
             <div className='lables-descriptions-class-card' onClick={() => navigateProps('/classEditInfo')}>
-                <label className='description-class-card'>-11:00</label>
-                <label className='description-class-card'>-Gurpo 33</label>
-                <label className='description-class-card'>-Martes - Jueves</label>
-                <label className='description-class-card'>-D3</label>
-                <label className='description-class-card'>-D2</label>
-                <label className='description-class-card'>-D1</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_1}</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_2}</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_3}</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_4}</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_5}</label>
+                <label className='description-class-card'>-{card.materia_caracteristica_6}</label>
             </div>
             <div className='divbuttons-class-cards'>
                 <button id='trash-icon-class' className='options-config-class-card'><i style={{fontSize: '140%'}} class="bi bi-trash3-fill"></i></button>
