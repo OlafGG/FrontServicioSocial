@@ -1,103 +1,19 @@
 import React from 'react';
 import '../../css/table.alum.css'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const TableAlum = () => {
-    const DumYVATA1 = [{
-        nombre: 'Uriel Olaf1',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf2',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf3',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf4',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },{
-        nombre: 'Uriel Olaf5',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf6',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf7',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf8',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf9',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf10',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Olaf11',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    },
-    {
-        nombre: 'Uriel Ola12f',
-    },
-    {
-        nombre: '@Roz Ramirez'
-    }, {
-        nombre: 'Juan Smith'
-    }]
+
+    
+    useEffect(() => {
+        const fechData = async () => {
+            const response = await fetch('http://localhost:8000/api/alumnos/')
+            const data = await response.json()
+            setalumnos(data.message)
+        };
+        
+        fechData()
+    }, []);
 
     const fechas = [{
         fecha: '12-Enero'
@@ -115,6 +31,7 @@ const TableAlum = () => {
 
     const [inicio, setInicio] = useState(0);
     const [fin, setFin] = useState(6);
+    const [alumnos, setalumnos] = useState(null);
     const  [array, setArray] = useState(fechas.length);
     return (
         <div className='div-table-alum-principal'>
@@ -147,14 +64,15 @@ const TableAlum = () => {
                     <th className='rotate'>%Asis</th>
                 </tr>
                 {
-                    DumYVATA1.map((element, index) => index >= inicio && index < fin  ?  <tr>
-                    <th>{element.nombre}</th>
+                    alumnos ? 
+                    alumnos.map((element, index) => index >= inicio && index < fin  ?  <tr>
+                    <th>{element.alum_nombre}</th>
                     {
                        fechas.map((element, index) => 
                        <th className='dummy'> -- </th>) 
                     }
                     <th> -- </th>
-                </tr> : '')
+                </tr> : '') : ''
                 }
             </table>
         </div>

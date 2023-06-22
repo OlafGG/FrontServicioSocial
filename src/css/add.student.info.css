@@ -27,7 +27,7 @@
     justify-content: center;
 }
 
-#input-id{
+#input-id, #input-id-n{
     width: 100%;
     height: 15%;
     background-color: rgba(80, 78, 78, .3);

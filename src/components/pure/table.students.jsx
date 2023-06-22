@@ -1,8 +1,25 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import '../../css/table.students.calif.css'
 
 
 const TableStudents = () => {
+
+
+
+
+    const [students, setstudents] = useState();
+
+    useEffect(() => {
+        const fechData = async () => {
+            const response = await fetch('http://localhost:8000/api/alumnos/')
+            const data = await response.json()
+            setstudents(data.message)
+        };
+        
+        fechData()
+    }, []);
+
 
     const parcial = [{
         id: 1,
@@ -15,13 +32,6 @@ const TableStudents = () => {
     {
         id:3,
         descripcion: 'Parcial Tres'
-    }
-    ]
-    const students = [{
-        nombre: 'Uriel Olaf'
-    },
-    {
-        nombre: 'Daniel Aros'
     }
     ]
 
@@ -69,23 +79,24 @@ const TableStudents = () => {
                     }
                 </tr>
                 {
+                    students ?
                     students.map((element, index) => 
                     <tr>
                     
                         <th id='name-table-rasgos'>
-                            {element.nombre}
+                            {element.alum_nombre}
                         </th>
                         {
-                            parcial.map((element, index) => 
+                            parcial.map((elementParcial, index) => 
                         <>
                         <td className='title-table-rasgos renderized'>
                             {
-                                calif1[index]
+                                element.promedio_parcial_1
                             }
                         </td>
                         <td className='title-table-rasgos renderized'>
                             {
-                                calif2[index]
+                                element.promedio_parcial_2
                             }
                         </td>
                         <td className='title-table-rasgos'>
@@ -103,7 +114,7 @@ const TableStudents = () => {
                             --
                         </td>
                     </tr>
-                    )
+                    ) :  ''
                 }
             </table>
         </div>
