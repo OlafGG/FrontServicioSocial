@@ -18,7 +18,7 @@ const ClassAddInfoEdit = () => {
     const [message, setmessage] = useState();
     const navegar = useNavigate();
 
-
+    const nombreMateria = 'Introduccion a la programación'
 
     const handleClick = (index, message) => {
         const nuevosComponentes = [...history];
@@ -33,7 +33,7 @@ const ClassAddInfoEdit = () => {
         <div className='class-add-information-edit'>
             <div className='class-add-info-title'>
                 <button className='class-edit-info-button-title ' onClick={() => navegar('/')}><i style={{fontSize: '140%'}} class="bi bi-house-door-fill"></i></button>
-                <label id='class-edit-info-title'>Introduccion a la Progrmacion</label>
+                <label id='class-edit-info-title'>{nombreMateria}</label>
                 <button className='class-edit-info-button-title'><i style={{fontSize: '140%'}} class="bi bi-box-arrow-right"></i></button>
             </div>
             <div className='class-add-info-buttons-up'>
