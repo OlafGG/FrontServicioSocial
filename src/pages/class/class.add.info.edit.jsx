@@ -48,7 +48,7 @@ const ClassAddInfoEdit = () => {
                 {history[1] && <TableAlum/>}
                 {history[2] && <AddEvidens/>}
                 {history[3] && <PorAlumnosClass/>}
-                {history[4] && <AddStudent/>}
+                {history[4] && <AddStudent handleclick={handleClick}/>}
                 {history[5] && <EditStudentsClass handleClick={handleClick}/>}
                 {history[6] && <DeletingStudentsAdvice alumno={message} handleclick={handleClick}/>}
                 

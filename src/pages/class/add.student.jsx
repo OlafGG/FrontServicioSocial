@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../css/add.student.info.css'
 
-const AddStudent = () => {
+const AddStudent = ({handleclick}) => {
 
 
+    const navegar = useNavigate();
     const [alumno, setalumno] = useState({
         alum_id: 0,
         alum_nombre: '',
@@ -56,13 +58,17 @@ const AddStudent = () => {
                 <label>Añadiendo un alumno</label>
             </div>
             <div className='add-info-student'>
-            <input id='input-id_n' type='number' placeholder='ID alumno'></input>
-                <input id='input-id' type='text' placeholder='Nombre del alumno'></input>
+                <input id='input-id_n' type='number' name='alum_id' placeholder='ID alumno' onChange={handleChange} value={alumno.alum_id}></input>
+                <input id='input-id' type='text' name='alum_nombre' onChange={handleChange} value={alumno.alum_nombre} placeholder='Nombre del alumno'></input>
                 <p>Nota: Solo se mostraran las dos primeras palabras</p>
             </div>
             <div className='button-adding-student-info'>
                 <button className='button-adding-info-student' id='cancelar'>Cancelar</button>
-                <button className='button-adding-info-student' id='aceptar'>Aceptar</button>
+                <button className='button-adding-info-student' id='aceptar' onClick={() => {fechData(alumno);
+                 
+                 setTimeout(() => {
+                    handleclick(0, '');
+                 }, 4000)}}>Aceptar</button>
             </div>
         </div>
     );
