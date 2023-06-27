@@ -16,25 +16,25 @@ const AddClassCalendary = () => {
                 </div>
                 <div id='div-hours-days'>
                     <div id='left-hours'>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='7-am'></input><label  className='label-check-input' for='7-am'>7AM</label></div> 
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='8-am'></input><label  className='label-check-input' for='8-am'>8AM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='9-am'></input><label  className='label-check-input' for='9-am'>9AM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='10-am'></input><label  className='label-check-input' for='10-am'>10AM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='11-am'></input><label  className='label-check-input' for='11-am'>11AM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='12-pm'></input><label  className='label-check-input' for='12-pm'>12PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='1-pm'></input><label  className='label-check-input' for='1-pm'>1PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='2-pm'></input><label  className='label-check-input' for='2-pm'>2PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='3-pm'></input><label  className='label-check-input' for='3-pm'>3PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='4-pm'></input><label  className='label-check-input' for='4-pm'>4PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='5-pm'></input><label  className='label-check-input' for='5-pm'>5PM</label></div>
-                        <div className='div-inputs'><input className='hora-adding' type='checkbox' id='6-pm'></input><label  className='label-check-input' for='6-pm'>6PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='7-am'></input><label  className='label-check-input' for='7-am'>7AM</label></div> 
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='8-am'></input><label  className='label-check-input' for='8-am'>8AM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='9-am'></input><label  className='label-check-input' for='9-am'>9AM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='10-am'></input><label  className='label-check-input' for='10-am'>10AM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='11-am'></input><label  className='label-check-input' for='11-am'>11AM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='12-pm'></input><label  className='label-check-input' for='12-pm'>12PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='1-pm'></input><label  className='label-check-input' for='1-pm'>1PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='2-pm'></input><label  className='label-check-input' for='2-pm'>2PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='3-pm'></input><label  className='label-check-input' for='3-pm'>3PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='4-pm'></input><label  className='label-check-input' for='4-pm'>4PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='5-pm'></input><label  className='label-check-input' for='5-pm'>5PM</label></div>
+                        <div className='div-inputs'><input className='hora-adding' type='radio' id='6-pm'></input><label  className='label-check-input' for='6-pm'>6PM</label></div>
                     </div>
                     <div id='right-day'>
-                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='lunes'></input><label  className='label-check-input' for='lunes'>Lunes</label></div>
-                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='martes'></input><label  className='label-check-input' for='martes'>Martes</label></div>
-                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='miercoles'></input><label  className='label-check-input' for='miercoles'>Miercoles</label></div>
-                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='jueves'></input><label  className='label-check-input' for='jueves'>Jueves</label></div>
-                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='viernes'></input><label  className='label-check-input' for='viernes'>Viernes</label></div>
+                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='lunes'></input><label  className='label-check-input' for='lunes'>LUNES</label></div>
+                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='martes'></input><label  className='label-check-input' for='martes'>MARTES</label></div>
+                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='miercoles'></input><label  className='label-check-input' for='miercoles'>MIERCOLES</label></div>
+                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='jueves'></input><label  className='label-check-input' for='jueves'>JUEVES</label></div>
+                        <div className='div-inputs'><input className='day-adding' type='checkbox' id='viernes'></input><label  className='label-check-input' for='viernes'>VIERNES</label></div>
                     </div>
                 </div>
                 <div id='div-button-adding-calendary'>

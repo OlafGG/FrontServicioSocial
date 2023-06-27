@@ -5,9 +5,6 @@ import '../../css/table.students.calif.css'
 
 const TableStudents = () => {
 
-
-
-
     const [students, setstudents] = useState();
 
     useEffect(() => {
