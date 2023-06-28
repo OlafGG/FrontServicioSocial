@@ -63,7 +63,7 @@ const AddStudent = ({handleclick}) => {
                 <p>Nota: Solo se mostraran las dos primeras palabras</p>
             </div>
             <div className='button-adding-student-info'>
-                <button className='button-adding-info-student' id='cancelar'>Cancelar</button>
+                <button className='button-adding-info-student' id='cancelar' onClick={() => {handleChange(5, '')}}>Cancelar</button>
                 <button className='button-adding-info-student' id='aceptar' onClick={() => {fechData(alumno);
                  
                  setTimeout(() => {
