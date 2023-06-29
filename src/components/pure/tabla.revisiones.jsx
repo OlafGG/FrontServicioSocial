@@ -1,56 +1,27 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import '../../css/table.reviciones.css'
 
 
 const TablaRevisiones = () => {
 
-    const actividades = [
-        {
-            trabajo: 'Tarea 1',
-            materia: 'Introduccion a la programacion',
-            dato1: 'Grupo 33',
-            dato2: 'Ingenieria de Software',
-            numero_revicion: 4
-        },
-        {
-            trabajo: 'Tarea 3',
-            materia: 'Introduccion a las TI',
-            dato1: 'Grupo 31',
-            dato2: 'Licenciatura en informatica',
-            numero_revicion: 7
-        },
-        {
-            trabajo: 'Tarea 9',
-            materia: 'Redes',
-            dato1: 'Grupo 34',
-            dato2: 'Ingenieria en telecomunicaciones',
-            numero_revicion: 9
-        },
-        {
-            trabajo: 'Tarea 1',
-            materia: 'Introduccion a la programacion',
-            dato1: 'Grupo 33',
-            dato2: 'Ingenieria de Software',
-            numero_revicion: 4
-        },
-        {
-            trabajo: 'Tarea 3',
-            materia: 'Introduccion a las TI',
-            dato1: 'Grupo 31',
-            dato2: 'Licenciatura en informatica',
-            numero_revicion: 7
-        },
-        {
-            trabajo: 'Tarea 9',
-            materia: 'Redes',
-            dato1: 'Grupo 34',
-            dato2: 'Ingenieria en telecomunicaciones',
-            numero_revicion: 9
-        }
-    ]
 
+    const [actividades, setactividad] = useState(null);
+
+    useEffect(() => {
+        const fechData = async () => {
+            const response = await fetch('http://localhost:8000/api/tareas/');
+            const data = await response.json()
+            setactividad(data.message)
+        };
+        fechData()
+        
+    }, []);
     return (
         <div id='table-div-principal'>
+        {
+            console.log(actividades)
+        }
             <table id='table-revisions-principal'>
                 <tr>
                     <th id='title-table-revision' colSpan={5}>
@@ -66,15 +37,16 @@ const TablaRevisiones = () => {
                 </tr>
                 
                 {
+                    actividades ? 
                     actividades.map((element) => 
                     <tr>
-                        <td className='data-td-show border-left-table'>{element.trabajo}</td>
-                        <td className='data-td-show'>{element.materia}</td>                            
-                        <td className='data-td-show'>{element.dato1}</td>
-                        <td className='data-td-show'>{element.dato2}</td>
-                        <td className='data-td-show border-right-table'>{element.numero_revicion}</td>
+                        <td className='data-td-show border-left-table'>{element.tarea_name}</td>
+                        <td className='data-td-show'>{element.tarea_materia}</td>                            
+                        <td className='data-td-show'>{element.grupo}</td>
+                        <td className='data-td-show'>{element.tarea_descripcion}</td>
+                        <td className='data-td-show border-right-table'>{element.tarea_evidencia    }</td>
                     </tr>
-                    )
+                    ) : ''
                 }
             </table>
         </div>

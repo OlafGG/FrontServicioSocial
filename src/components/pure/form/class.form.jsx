@@ -87,7 +87,9 @@ const ClassForm = () => {
                     <input type='text' placeholder='Caracteristica' name='materia_caracteristica_6' onChange={handleChange} value={inputValue.materia_caracteristica_6} id='d6' className='description final'></input>
                 <div>
                     <button type='submit' id='submit-button-add-class' onClick={()  => { fechData(inputValue);
-                    navegar('/') }   }>Añadir</button>  
+                    setTimeout(() => {
+                      navegar('/');
+                    }, 4000)}}>Añadir</button>  
                 </div>
                     
             </div>
